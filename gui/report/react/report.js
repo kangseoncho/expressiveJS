@@ -14,12 +14,12 @@ class Report extends Component {
       //console.log(element)
       for (let key in element) {
         //return objects inside timeline in watchDog.json
-        report.push(<p > {key + ': ' + element[key]} </p>)
+        report.push(<div id="report" ><b>{key}</b>{':  ' + element[key]}</div>)
       }
     });
 
     return (
-      <div className="report flex-item">
+      <div className="flex-item">
         {report}
       </div>
     );

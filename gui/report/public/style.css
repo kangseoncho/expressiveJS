@@ -9,12 +9,17 @@ body {
     padding-bottom: 5%;
     padding-top:  5%;
     font-size: 26px;
+    background-color: #3F51B5;
+    margin-bottom: 5%;
+    font-family: roboto;
+    color: white;
 }
 
 button {
     position: relative;
     display: block;
     padding-bottom: 10px;
+    size: 20px;
 }
 
 .flex-container {
@@ -22,11 +27,17 @@ button {
     width: auto;
     /*border: 1px black solid;*/
     margin: auto;
-    width: 90%;
 }
 
 .flex-item {
     border: 1px black solid;
     width: 33%;
+    font-family: roboto;
+    text-align: center;
+    height: auto;
+}
 
+#report {
+    font-size: 26px;
+    height: auto;
 }

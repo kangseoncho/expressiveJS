@@ -6719,18 +6719,21 @@ var Report = function (_Component) {
         for (var key in element) {
           //return objects inside timeline in watchDog.json
           report.push(_react2.default.createElement(
-            'p',
-            null,
-            ' ',
-            key + ': ' + element[key],
-            ' '
+            'div',
+            { id: 'report' },
+            _react2.default.createElement(
+              'b',
+              null,
+              key
+            ),
+            ':  ' + element[key]
           ));
         }
       });
 
       return _react2.default.createElement(
         'div',
-        { className: 'report flex-item' },
+        { className: 'flex-item' },
         report
       );
     }
@@ -9754,10 +9757,10 @@ var App = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        { className: 'mdl-layout mdl-js-layout' },
+        null,
         _react2.default.createElement(
-          'header',
-          { className: 'title mdl-typography--text-center mdl-layout__header mdl-layout--title' },
+          'div',
+          { className: 'title' },
           ' Your Server Route Results! '
         ),
         _react2.default.createElement(
@@ -22360,6 +22363,16 @@ module.exports = {
 		"method": "GET",
 		"route": "/route",
 		"timeline": [
+			{
+				"timestamp": "number",
+				"res": "i am get res from /route",
+				"req": "i am get req from /route"
+			},
+			{
+				"timestamp": "number",
+				"res": "i am get res from /route",
+				"req": "i am get req from /route"
+			},
 			{
 				"timestamp": "number",
 				"res": "i am get res from /route",

@@ -44,8 +44,8 @@ class App extends Component {
 
   render() {
     return (
-      <div className="mdl-layout mdl-js-layout">
-        <header className="title mdl-typography--text-center mdl-layout__header mdl-layout--title"> Your Server Route Results! </header>
+      <div>
+        <div className="title"> Your Server Route Results! </div>
 
         <div className="App flex-container">
 
