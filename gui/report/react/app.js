@@ -54,6 +54,9 @@ class App extends Component {
     //clear off timeline & details text caused by other buttons
     this.setState({ userReports: clearReport });
     this.setState({ details: clearDetails })
+
+    console.log("userRoutes", this.state.userRoutes)
+    console.log('curr method', this.currMethod)
   }
 
   //display report according to the selected route
