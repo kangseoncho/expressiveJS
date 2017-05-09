@@ -190,7 +190,6 @@ class App extends Component {
   detailedRequestSnapshot(index) {
     let tempDetails = {};
     let fullRequest = this.state.userReports[index][Object.keys(this.state.userReports[index])].snapshot.req;
-    console.log(fullRequest)
     //should do logic to create tempDetails to output only relevant info on req obj
     for(let key in fullRequest['headers']) {
       tempDetails['headers-' + key] = fullRequest['headers'].key;
