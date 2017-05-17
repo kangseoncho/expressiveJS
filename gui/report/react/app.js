@@ -5,8 +5,6 @@ const json = require('./../../../expressive.json');
 import JSONInterface from './../public/expressiveJSONInterface';
 import Summaries from './../public/summaries';
 
-import style from './../public/scss/style.scss';
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -19,16 +17,15 @@ class App extends Component {
       currTab: "",
       openTabs: [],
       xprSettingsTab: [{"xpr":"xprSelected"},{"Settings":"xprNotSelected"}],
-      details: {}, 
-      reqDetails :[], 
-      resDetails :[], 
+      details: {},
+      reqDetails :[],
+      resDetails :[],
       changeDetails :[],
     };
     this.displayRoute = this.displayRoute.bind(this);
     this.displayReport = this.displayReport.bind(this);
     this.responseSummaries = this.responseSummaries.bind(this);
     this.requestSummaries = this.requestSummaries.bind(this);
-    //this.displayReportFromTabs = this.displayReportFromTabs.bind(this);
     this.initAndHighlightTab = this.initAndHighlightTab.bind(this);
     this.closeTab = this.closeTab.bind(this);
     this.toggleXprTab = this.toggleXprTab.bind(this);
@@ -92,7 +89,7 @@ class App extends Component {
     // this.createSnapshots(tempReport)
   }
 
-  // createSnapshots(report){    
+  // createSnapshots(report){
   //   console.log(report)
   //   let tempDisplay = {};
   //   let reportKeys = Object.keys(report)
@@ -151,28 +148,6 @@ class App extends Component {
     //update current selected tab
     this.setState({ currTab: tempCurrTab });
   }
-
-  //display report according to the selected tab
-  // displayReportFromTabs(route) {
-  //   let emptiness = [];
-  //   let tempReport = [];
-  //   let tempCurrTab = route;
-
-  //   //empties userReports
-  //   this.setState({ userReports: emptiness });
-
-  //   //find timeline of only the selected method and route
-  //   if (this.state.json[route]['method'] + " " + this.state.json[route]['route'] === route) {
-  //     tempReport = (this.state.json[route]['timeline'])
-  //   }
-
-  //   //change state according to selected method and route
-  //   this.setState({ userReports: tempReport });
-  //   //this.setState({ stateChangeLogs: JSONInterface.getStateChanges(this.state.json[route]) });
-
-  //   //update current selected tab
-  //   this.setState({ currTab: tempCurrTab });
-  // }
 
   //generate summary lines for req and res objects
   responseSummaries(log) {
