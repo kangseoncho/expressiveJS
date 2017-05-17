@@ -3,7 +3,7 @@
   summaries of the differences.
 */
 
-const JSONInterface = require('./expressiveJSONInterface.js');
+//const JSONInterface = require('./expressiveJSONInterface.js');
 const xprJSON = require('./../../../expressive.json');
 
 const summaries = {

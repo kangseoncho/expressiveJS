@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import XprAndSettingsTab from './xprAndSettingsTab';
 import Report from './report';
 const json = require('./../../../expressive.json');
-import JSONInterface from './../public/expressiveJSONInterface';
+//import JSONInterface from './../public/expressiveJSONInterface';
 import Summaries from './../public/summaries';
 
 class App extends Component {
